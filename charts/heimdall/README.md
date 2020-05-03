@@ -75,7 +75,7 @@ The following tables lists the configurable parameters of the Sentry chart and t
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```console
-helm install --name my-release \
+helm install my-release \
   --set timezone="America/New York" \
     billimek/heimdall
 ```
@@ -83,7 +83,7 @@ helm install --name my-release \
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-helm install --name my-release -f values.yaml billimek/heimdall
+helm install my-release -f values.yaml billimek/heimdall
 ```
 
 ---
