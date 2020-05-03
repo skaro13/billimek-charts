@@ -14,7 +14,7 @@ $ helm install billimek/duplicati
 To install the chart with the release name `my-release`:
 
 ```console
-helm install --name my-release billimek/duplicati
+helm install my-release billimek/duplicati
 ```
 
 ## Uninstalling the Chart
@@ -22,7 +22,7 @@ helm install --name my-release billimek/duplicati
 To uninstall/delete the `my-release` deployment:
 
 ```console
-helm delete my-release --purge
+helm delete my-release
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
@@ -88,7 +88,7 @@ The following tables lists the configurable parameters of the Sentry chart and t
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
 ```console
-helm install --name my-release \
+helm install my-release \
   --set timezone="America/New York" \
     billimek/duplicati
 ```
@@ -96,7 +96,7 @@ helm install --name my-release \
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-helm install --name my-release -f values.yaml stable/duplicati
+helm install my-release -f values.yaml billimek/duplicati
 ```
 
 ---
