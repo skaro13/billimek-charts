@@ -14,7 +14,7 @@ $ helm install billimek/heimdall
 To install the chart with the release name `my-release`:
 
 ```console
-helm install --name my-release billimek/heimdall
+helm install my-release billimek/heimdall
 ```
 
 ## Uninstalling the Chart
@@ -22,7 +22,7 @@ helm install --name my-release billimek/heimdall
 To uninstall/delete the `my-release` deployment:
 
 ```console
-helm delete my-release --purge
+helm delete my-release
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
@@ -83,7 +83,7 @@ helm install --name my-release \
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-helm install --name my-release -f values.yaml stable/heimdall
+helm install --name my-release -f values.yaml billimek/heimdall
 ```
 
 ---
